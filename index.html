@@ -8,24 +8,135 @@
     <title>Dashboard</title>
 </head>
 <body>
-
     <div class="mainContainer">
-
         <section class="menuBar">
-
-        </section>
-
-
-        <section class="rightContainer">
-
-            <div class="topBar">
-                <h3>top</h3>
+            <div class="logoContainer">
+                <img src="/images/dashboard-2-line.svg" alt="logo" class="logoImage">
+                <h3>CLEVERIOT</h3>
             </div>
+            <div class="navigations">
+                <ul>
+                    <li>
+                        <a href="#" class="menuList">
+                            <img src="/images/dashboard-2-line.svg" alt="dashboard" class="listIcons">
+                            <h4>Dashboard</h4>
+                        </a>
+                    </li>
+                    <li>  
+                        <a href="#" class="menuList">
+                                <img src="/images/local_gas_station-white.svg" alt="dashboard" class="listIcons">
+                                <h4>Stations</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuList">
+                            <img src="/images/heart-white.svg" alt="dashboard" class="listIcons">
+                            <h4>Favourite</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuList">
+                            <img src="/images/radio-2-line-white.svg" alt="dashboard" class="listIcons">
+                            <h4>Radio</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menuList">
+                            <img src="/images/settings-white.svg" alt="dashboard" class="listIcons">
+                            <h4>Setting</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logOut">
+                <a href="#" class="logoutIcon">
+                    <img src="/images/logout-box-r-line.svg" alt="dashboard" class="logoutImage">
+                    <h4>Logout</h4>
+                </a>
+            </div>
+        </section>
+        <section class="rightContainer">
+            <div class="topBar">
+                <div class="profileDetails">
+                    <img src="/images/profile.jpg" alt="rofile pic" class="profileImage">
+                    <div class="profileText">
+                        <h3>Good Day, Sathish Vj</h3>
+                        <P>Driving License id :  2018956859399</P>
+                    </div>
+                </div>
+                <div class="searchBar">
+                    <img src="./images/search.svg" alt="search icon" class="searchIcon">
+                    <input type="text" placeholder="Search Something">
+                </div>
+
+                <div class="notificationBell">
+                    <img src="/images/bell.svg" alt="notification bell">
+                </div>
+            </div>
+
+
+
+
 
             <div class="gridContainer">
                 <div class="colOne">
-                    <p>1</p>                  
+                    <div class="connectedDevices">
+                        <div class="devicesText">
+                            <h4>Connected Devices</h4>
+                            <p>Sathish Iphone 13</p>
+                        </div>
+                        <div class="devicesGrid">
+                            <div class="devicesCol1">
+                                <img src="/images/battery-charging-white.svg" alt="charging" class="devicesImages">
+                                <h5>70%</h5>
+                                <p>Charged</p>
+                            </div>
+                            <div class="devicesCol2">
+                                <img src="/images/phone-call-fill-white.svg" alt="missed call" class="devicesImages">
+                                <p>5 Missed Calls</p>
+                            </div>
+                            <div class="devicesCol3">
+                                <img src="/images/bell.svg" alt="notification bell" class="devicesImages">
+                                <p>8 Notifications</p>
+                            </div>
+                            <div class="devicesCol4">
+                                <img src="/images/logout-box-r-line.svg" alt="logout" class="devicesImages">
+                                <p>Disconnected</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="location">
+                        <div class="locationHeading">
+                            <h3><span>Live</span> Location</h3>
+                        </div>
+                        <div class="locationImage">
+                            <div class="locationDetails">
+                                <div class="timeDistance">
+                                    <h5>No. 532 3rd cross street road</h5>
+                                    <div class="locationIconsContainer">
+                                        <img src="/images/pin-distance-line.svg" alt="distance" class="locationIcons">
+                                        <p>8 Km</p>
+                                        <img src="/images/clock.svg" alt="clock" class="locationIcons">
+                                        <p>12 Min</p>
+                                    </div>
+                                </div>
+                                <div class="shareBtn">
+                                    <button >Share Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="lastVisited">
+                        <div class="visitedHeading">
+                            <h5>Last Visited</h5>
+                            <p>View More</p>
+                        </div>
+                    </div>              
                 </div>
+                
+                
+
+
                 <div class="colTwo">
                     <p>2</p>                   
                 </div>
@@ -33,11 +144,7 @@
                     <p>3</p>
                 </div>
             </div>
-
         </section>
-
-
-
     </div>
     
     
