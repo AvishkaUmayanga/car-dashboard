@@ -258,7 +258,7 @@ body{
 .location{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .locationHeading span{
@@ -314,18 +314,136 @@ body{
     cursor: pointer;
 }
 
+
+
 .lastVisited{
     background-color: #FFFFFF;
-    margin-top: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 20px;
 }
 .visitedHeading{
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #A6A6A6;
+    padding-bottom: 5px;
 }
 .visitedHeading p{
     color: #A6A6A6;
     font-size: 12px;
     font-weight: 600;
+}
+.visitedList{
+    display: flex;
+    flex-direction: column;
+}
+.visitDetails{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.visitDetails p{
+    font-size: 14px;
+}
+.hotelDetails{
+    display: flex;
+    align-items: center;
+}
+.visitImage{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* first column end */
+
+
+
+/* second column */
+.nowPlaying{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding:20px;
+
+}
+.playHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playText{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.playText p{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.playOptions{
+    border: 2px solid #DCDBDB;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+
+}
+.playHeadImages{
+    width: 12px;
+    height: 12px;
+}
+.songDetails{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.songImage{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.songText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.songText p{
+    color: #959494;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.songFavorite{
+    margin-left: auto;
+}
+.playDuration{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.playBar{
+    height: 7px;
+    border-radius: 5px;
+    background-color: #DCDBDB;
+    position: relative;
+    
+}
+.playBar::before{
+    content: '';
+    width: 60%;
+    background-color: #37B3E2;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+}
+.songTime{
+    color: #37B3E2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 8px;
 }
