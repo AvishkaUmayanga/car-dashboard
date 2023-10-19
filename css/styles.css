@@ -112,7 +112,6 @@ body{
     flex-direction: column;
 }
 
-
 /* Topbar */
 .topBar{
     height: 10%;
@@ -178,12 +177,6 @@ body{
 
 
 
-
-
-
-
-
-
 .gridContainer{
     display: grid;
     grid-template-columns: 35% 1fr 1fr;
@@ -195,12 +188,12 @@ body{
 .colOne, .colTwo, .colThree{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    
-    
+    height: 100%;  
 }
 
 /* first column */
+
+/*first column first card*/
 .connectedDevices{
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -255,6 +248,7 @@ body{
 }
 
 
+/*first column second card*/
 .location{
     display: flex;
     flex-direction: column;
@@ -361,9 +355,10 @@ body{
 
 
 
+
 /* second column */
 
-/* column 2 card 1 */
+/*second column first card*/
 .nowPlaying{
     background-color: #FFFFFF;
     display: flex;
@@ -483,7 +478,7 @@ body{
 }
 
 
-/* column 2 card 2 */
+/*second column second card*/
 .recentCalls{
     background-color: #FFFFFF;
     display: flex;
@@ -534,7 +529,10 @@ body{
 /* second column  end*/
 
 
+
+
 /* third column  end*/
+
 /* third column first card */
 .weatherCard{
     display: flex;
@@ -646,4 +644,102 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* third column second card */
+.myCalender{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.calenderHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #DCDBDB;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.calFirstDetails{
+    height: 60px;
+    position: relative;
+}
+.calFirstDetails::before{
+    content: '09:00';
+    font-size: 12px;
+    position: absolute;
+}
+.calFirstDetails::after{
+    content: '09:30';
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+
+.meetingDetails1{
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    right: 0;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+.meetingDetails1::before{
+    content: '';
+    background-color: #37B3E2;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.meetingDurationDetails{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 5px;
+}
+.meetingDuration{
+    display: flex;
+    align-items: center;
+}
+.meetingDuration p{
+    font-size: 12px;
+    color: #A6A6A6;
+    margin-left: 10px;
+}
+.calSecondDetails{
+    height: 60px;
+    position: relative;
+}
+.calSecondDetails::before{
+    content: '10:00';
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+.meetingDetails2{
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    right: 0;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+.meetingDetails2::before{
+    content: '';
+    background-color: #6CFF95;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
